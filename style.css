@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Rubik", sans-serif;
+}
+header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-height: 30vh;
+}
+header h2 {
+  padding: 2rem;
+}
+#logo {
+  text-decoration: none;
+  font-size: 2rem;
+  color: black;
+}
+.search-form {
+  padding: 2rem;
+  display: flex;
+}
+.search-form input {
+  font-size: 2rem;
+  padding: 0.5rem;
+  border: none;
+  border: 2px solid rgb(93, 86, 161);
+  width: 100%;
+}
+.search-form button {
+  padding: 1rem;
+  font-size: 1rem;
+  border: none;
+  background: rgb(93, 86, 161);
+  cursor: pointer;
+  color: white;
+}
+.gallery-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(117, 114, 114);
+  padding: 0.5rem 0rem;
+}
+.gallery-info a {
+  text-decoration: none;
+  color: rgb(117, 114, 114);
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  padding: 2rem 0rem;
+  width: 80%;
+  margin: auto;
+  row-gap: 5rem;
+  column-gap: 3rem;
+}
+.gallery-img {
+  overflow: hidden;
+  position: relative;
+}
+.gallery-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.nav-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 30vh;
+}
+.more {
+  padding: 1rem 2rem;
+  border-radius: 0.3rem;
+  background: rgb(93, 86, 161);
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
